@@ -1,0 +1,30 @@
+.. _intro:
+
+Introduction
+**************
+
+What is exlibs ?
+=====================
+
+exlibs is a library written in cpp help game-developer easy developing games that could communicate between Editor 
+and Stand-Alone. The library includes:
+
+ * basic container
+ * memory manager and debug helpers
+ * designer pattern templates  
+ * meta templates
+ * math library
+ * RTTI helpers
+ * serialize helpers
+ * proeprty helpers
+ * file system
+
+Links
+======
+
+ * www.ex-dev.com/exlibs ( coming soon )...
+
+Contact
+=========
+
+ * Wu Jie: KarasAya [at] gmail [dot] com

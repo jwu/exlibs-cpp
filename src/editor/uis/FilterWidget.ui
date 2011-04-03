@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>filterWidget</class>
+ <widget class="QWidget" name="filterWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>25</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="HintLineEdit" name="hintLine"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HintLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>../src/widgets/HintLineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../editor.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>hintLine</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>filterWidget</receiver>
+   <slot>checkButton(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>339</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>filterChanged(QString)</signal>
+  <slot>reset()</slot>
+  <slot>checkButton(QString)</slot>
+ </slots>
+</ui>
